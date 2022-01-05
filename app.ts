@@ -15,6 +15,7 @@ and live code compilation ( you see bugs in coding time ).
 
 //---------------- define type of arrays ---------------------//
 // const students: [string, number, string] = ["Aniket", 17, "typescript"]
+// const student: string[] = ["Aniket", "Rutuja"]  -- It give type string for all values of array
 
 //-------------------- define type of object -----------------------//
 // type Student = {
@@ -56,3 +57,5 @@ and live code compilation ( you see bugs in coding time ).
 //     console.log("hello world!...")
 // }
 
+//-------------- Generics or type asseration -----------------//
+// const student = "Aniket" as string;          ---- Write it after value of variable and othre.
