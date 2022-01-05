@@ -1,8 +1,9 @@
 /* 
 -> The typescript is superset of javascript.
 -> It is the javascript with types and some other feactures like static typing, static-type checking
-and live code compilation ( you see bugs in coding time ).
--> Broswer can't understand typescript but you can compile it into in javascript.
+    and live code compilation ( you see bugs in coding time ).
+-> Broswer can't understand typescript but you can compile it into in javascript. And compiled typescript is a javascript we
+    use it any where.
 -> You use typescript with react, node and many more.
 */
 //-------------- define the types of variables ------------------------//
@@ -58,4 +59,29 @@ and live code compilation ( you see bugs in coding time ).
 // }
 
 //-------------- Generics or type asseration -----------------//
-// const student = "Aniket" as string;          ---- Write it after value of variable and othre.
+// -> TypeScript infers and checks the type of a variable using some internal logic mechanism called Type Assertion.
+// -> Type assertion allows you to set the type of a value and tell the compiler not to infer it. 
+//It have two methode 
+// 1. As syntax
+// const student = "Aniket" as string;          ---- Write it after the value of variable, object and other.
+// interface Student{
+//  name:string,
+//  age:number
+// }
+
+// const student = <Student>{}
+// student.name = "Aniket"
+// student.age = 17
+// 2. angle-bracket 
+// const student = <string> "Aniket";              ---- Write it before the value of variable, object and other.
+
+// interface Student{
+//     name:string,
+//     age:number
+// }
+// const student = {} as Student
+// student.name = "Aniket"
+// student.age = 17
+
+//------------------- Dom Manipulation -------------------//
+// const h1:NodeListOf<HTMLHeadingElement> = document.querySelectorAll("h1"); --- we get type by hover on h1 and many more
